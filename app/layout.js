@@ -16,13 +16,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={cn(
-          "h-[100vh] bg-gradient-to-r from-green-200 via-green-400 to-purple-700",
+          " bg-gradient-to-r from-green-200 via-green-400 to-purple-700 grid grid-cols-4 overflow-y-hidden",
           salsa.className
         )}
       >
-        <Navbar />
-        <Sidebar />
-        {children}
+        <div className="col-span-4">
+          <Navbar />
+        </div>
+        <div>
+          <Sidebar />
+        </div>
+        <main className="col-span-3">{children}</main>
       </body>
     </html>
   );

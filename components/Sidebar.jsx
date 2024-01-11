@@ -10,8 +10,8 @@ import { Button } from "./ui/button";
 export default function Sidebar() {
   return (
     <div className="py-5 px-5">
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1">
+      <Accordion type="single" collapsible className="w-full ">
+        <AccordionItem value="item-1" className="border-bottom border-white ">
           <AccordionTrigger>Block 1</AccordionTrigger>
           <AccordionContent>
             <Button className="w-full my-2">Floor 1</Button>
