@@ -15,10 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={cn(
-          " bg-gradient-to-r from-green-200 via-green-400 to-purple-700 grid grid-cols-4 overflow-y-hidden",
-          salsa.className
-        )}
+        className={cn(" grid grid-cols-4 overflow-y-hidden", salsa.className)}
       >
         <div className="col-span-4">
           <Navbar />

@@ -11,7 +11,7 @@ export default function Navbar() {
         animate={{ x: 0, opacity: 1 }}
         className="pt-2"
       >
-        <h1 className="text-3xl upppercase text-white">Hostel Management</h1>
+        <h1 className="text-3xl upppercase ">Hostel Management</h1>
       </motion.div>
     </div>
   );
