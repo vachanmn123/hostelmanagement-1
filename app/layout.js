@@ -2,6 +2,7 @@ import { Inter, Salsa } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
+import Sidebar from "@/components/Sidebar";
 
 const salsa = Salsa({ subsets: ["latin"], weight: ["400"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         )}
       >
         <Navbar />
+        <Sidebar />
         {children}
       </body>
     </html>
