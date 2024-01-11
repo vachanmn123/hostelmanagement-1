@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
+import { Inter, Salsa } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const salsa = Salsa({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={cn(
+          "h-[100vh] bg-gradient-to-r from-green-200 via-green-400 to-purple-700",
+          salsa.className
+        )}
+      >
         <Navbar />
         {children}
       </body>
